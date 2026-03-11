@@ -1,0 +1,659 @@
+---
+title: Table Of Contents
+description: Get started with Javascript from zero, table of content.
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import FileTree from "../../../components/FileTree.astro";
+import Center from "../../../components/Center.astro";
+
+<FileTree>
+- Chapter 1: JavaScript Foundations
+  - 1.1 History and Evolution of JavaScript
+  - 1.2 Setting Up Your Development Environment
+  - 1.3 Your First JavaScript Program
+  - 1.4 JavaScript in Different Environments
+  - 1.5 Understanding the ECMAScript Specification
+- Chapter 2: Variables and Data Types
+  - 2.1 Variables: var, let, and const
+  - 2.2 Hoisting and Temporal Dead Zone
+  - 2.3 Primitive Data Types
+  - 2.3.1 Number (integers, floats, NaN, Infinity)
+  - 2.3.2 String (methods, template literals ...)
+  - 2.3.3 Boolean
+  - 2.3.4 Undefined and Null
+  - 2.3.5 Symbol
+  - 2.3.6 BigInt
+  - 2.4 Reference Data Types
+  - 2.4.1 Object
+  - 2.4.2 Array
+  - 2.4.3 Function
+  - 2.5 Type Coercion and Conversion
+  - 2.6 Type Checking Methods (typeof, instanceof,..)
+- Chapter 3: Operators and Expressions
+  - 3.1 Arithmetic Operators
+  - 3.2 Assignment Operators
+  - 3.3 Comparison Operators (== vs ===)
+  - 3.4 Logical Operators (&&, ||, ??)
+  - 3.5 Bitwise Operators
+  - 3.6 Ternary Operator
+  - 3.7 Comma Operator
+  - 3.8 typeof and instanceof Operators
+  - 3.9 Optional Chaining (?.)
+  - 3.10 Nullish Coalescing (??)
+  - 3.11 Operator Precedence and Associativity
+- Chapter 4: Control Flow
+  - 4.1 Conditional Statements
+  - 4.1.1 if, else if, else
+  - 4.1.2 switch statement
+  - 4.1.3 Conditional (ternary) operator
+  - 4.2 Loops
+  - 4.2.1 for loop
+  - 4.2.2 while loop
+  - 4.2.3 do...while loop
+  - 4.2.4 for...in loop
+  - 4.2.5 for...of loop
+  - 4.3 Loop Control 
+  - 4.4 Error Handling with try/catch/finally
+  - 4.5 Throwing Custom Errors
+- Chapter 5: Function Fundamentals
+  - 5.1 Function Declarations
+  - 5.2 Function Expressions
+  - 5.3 Arrow Functions
+  - 5.4 Immediately Invoked Function Expressions (IIFE)
+  - 5.5 Generator Functions
+  - 5.6 Async Functions
+  - 5.7 Function Parameters
+  - 5.7.1 Default Parameters
+  - 5.7.2 Rest Parameters
+  - 5.7.3 The arguments Object
+  - 5.7.4 Parameter Destructuring
+- Chapter 6: The 'this' Keyword
+  - 6.1 What is 'this'?
+  - 6.2 Global Context
+  - 6.3 Function Context
+  - 6.4 Method Context
+  - 6.5 Constructor Context
+  - 6.6 Event Handler Context
+  - 6.7 Arrow Functions and 'this'
+  - 6.8 Explicit Binding
+  - 6.8.1 call()
+  - 6.8.2 apply()
+  - 6.8.3 bind()
+  - 6.9 'this' Priority Rules
+- Chapter 7: Closures
+  - 7.1 Understanding Lexical Scope
+  - 7.2 What are Closures?
+  - 7.3 How Closures Work
+  - 7.4 Practical Closure Patterns
+  - 7.4.1 Private Variables
+  - 7.4.2 Function Factories
+  - 7.4.3 Module Pattern
+  - 7.4.4 Memoization
+  - 7.4.5 Event Listeners and Callbacks
+  - 7.5 Closure Performance Considerations
+  - 7.6 Common Closure Pitfalls
+- Chapter 8: Higher-Order Functions
+  - 8.1 Functions as First-Class Citizens
+  - 8.2 Functions Accepting Functions (Callbacks)
+  - 8.3 Functions Returning Functions
+  - 8.4 Function Composition
+  - 8.5 Currying
+  - 8.5.1 What is Currying?
+  - 8.5.2 Implementing Currying
+  - 8.5.3 Partial Application vs Currying
+  - 8.6 Practical Higher-Order Functions
+  - 8.6.1 once()
+  - 8.6.2 debounce()
+  - 8.6.3 throttle()
+  - 8.6.4 memoize()
+  - 8.7 Built-in Higher-Order Functions
+- Chapter 9: Recursion
+  - 9.1 Understanding Recursion
+  - 9.2 Base Case and Recursive Case
+  - 9.3 The Call Stack in Recursion
+  - 9.4 Tail Call Optimization
+  - 9.5 Common Recursive Problems
+  - 9.5.1 Factorial
+  - 9.5.2 Fibonacci
+  - 9.5.3 Tree Traversal
+  - 9.5.4 Deep Object Cloning
+  - 9.6 Recursion vs Iteration
+- Chapter 10: Objects Deep Dive
+  - 10.1 Object Literals
+  - 10.2 Property Accessors (dot vs bracket)
+  - 10.3 Computed Properties
+  - 10.4 Method Definitions
+  - 10.5 Object Destructuring
+  - 10.6 Property Descriptors
+  - 10.6.1 value
+  - 10.6.2 writable
+  - 10.6.3 enumerable
+  - 10.6.4 configurable
+  - 10.6.5 get and set
+  - 10.7 Object Methods
+  - 10.7.1 Object.create()
+  - 10.7.2 Object.assign()
+  - 10.7.3 Object.keys(), values(), entries()
+  - 10.7.4 Object.freeze(), seal(), preventExtensions()
+  - 10.7.5 Object.hasOwn()
+  - 10.7.6 Object.defineProperty()
+  - 10.8 Property Enumeration Order
+- Chapter 11: Prototypal Inheritance
+  - 11.1 Understanding Prototypes
+  - 11.2 The Prototype Chain
+  - 11.3 __proto__ vs prototype
+  - 11.4 Object.getPrototypeOf() and Object.setPrototypeOf()
+  - 11.5 The instanceof Operator
+  - 11.6 constructor Property
+  - 11.7 Creating Objects with Custom Prototypes
+  - 11.8 Inheritance Patterns
+  - 11.8.1 Prototype Chain Inheritance
+  - 11.8.2 Constructor Stealing
+  - 11.8.3 Combination Inheritance
+  - 11.8.4 Parasitic Inheritance
+  - 11.8.5 Parasitic Combination Inheritance
+- Chapter 12: ES6 Classes
+  - 12.1 Class Declarations and Expressions
+  - 12.2 The constructor Method
+  - 12.3 Instance Properties
+  - 12.4 Static Methods and Properties
+  - 12.5 Private Fields (#)
+  - 12.6 Getters and Setters in Classes
+  - 12.7 Inheritance with extends and super
+  - 12.8 Method Overriding
+  - 12.9 Abstract Classes (Simulation)
+  - 12.10 Mixins
+  - 12.11 Classes Under the Hood (Syntactic Sugar)
+- Chapter 13: Built-in Objects
+  - 13.1 The Global Object
+  - 13.2 Number Object
+  - 13.3 String Object
+  - 13.4 Boolean Object
+  - 13.5 Date Object
+  - 13.6 Math Object
+  - 13.7 RegExp Object
+  - 13.8 Error Object and Error Types
+  - 13.9 JSON Object (parse, stringify)
+  - Part IV: Arrays and Collections
+- Chapter 14: Arrays Mastery
+  - 14.1 Creating Arrays
+  - 14.2 Array Properties (length)
+  - 14.3 Array Methods Categories
+  - 14.3.1 Mutator Methods (push, pop, shift, unshift, splice, sort, reverse, fill, copyWithin)
+  - 14.3.2 Accessor Methods (concat, slice, join, indexOf, lastIndexOf, includes)
+  - 14.3.3 Iteration Methods (forEach, map, filter, reduce, reduceRight, some, every, find, findIndex, findLast, findLastIndex)
+  - 14.4 Multidimensional Arrays
+  - 14.5 Array-Like Objects
+  - 14.5.1 arguments
+  - 14.5.2 HTML Collections
+  - 14.5.3 Converting to Arrays
+  - 14.6 Sparse Arrays
+  - 14.7 Performance Considerations
+- Chapter 15: Advanced Array Techniques
+  - 15.1 The reduce() Method Deep Dive
+  - 15.2 Flattening Arrays (flat, flatMap)
+  - 15.3 Sorting Custom Objects
+  - 15.4 Grouping Array Elements
+  - 15.5 Array Intersection, Union, Difference
+  - 15.6 Chaining Array Methods
+  - 15.7 Immutable Array Operations
+  - 15.8 Implementing Custom Array Methods
+- Chapter 16: Iterators and Generators
+  - 16.1 The Iteration Protocol
+  - 16.1.1 Iterable Protocol (Symbol.iterator)
+  - 16.1.2 Iterator Protocol (next(), done, value)
+  - 16.2 Built-in Iterables
+  - 16.3 Creating Custom Iterables
+  - 16.4 Generator Functions
+  - 16.4.1 yield Keyword
+  - 16.4.2 yield* Delegation
+  - 16.4.3 Generator Methods (next, return, throw)
+  - 16.4.4 Two-Way Communication with Generators
+  - 16.5 Practical Generator Use Cases
+  - 16.5.1 Infinite Sequences
+  - 16.5.2 Lazy Evaluation
+  - 16.5.3 Controlling Asynchronous Flows
+- Chapter 17: Modern Collections
+  - 17.1 Map
+  - 17.1.1 Creating and Using Maps
+  - 17.1.2 Map vs Object
+  - 17.1.3 Map Methods (set, get, has, delete, clear)
+  - 17.1.4 Iterating Maps
+  - 17.2 Set
+  - 17.2.1 Creating and Using Sets
+  - 17.2.2 Set vs Array
+  - 17.2.3 Set Methods (add, has, delete, clear)
+  - 17.2.4 Iterating Sets
+  - 17.2.5 Set Operations (union, intersection, difference)
+  - 17.3 WeakMap
+  - 17.3.1 Garbage Collection and WeakMaps
+  - 17.3.2 Use Cases (private data, caching)
+  - 17.4 WeakSet
+  - 17.5 Typed Arrays (ArrayBuffer, DataView)
+  - Part V: Asynchronous JavaScript
+- Chapter 18: The Event Loop
+  - 18.1 JavaScript Runtime Architecture
+  - 18.1.1 Call Stack
+  - 18.1.2 Heap
+  - 18.1.3 Web APIs / C++ APIs
+  - 18.1.4 Callback Queue (Task Queue)
+  - 18.1.5 Microtask Queue
+  - 18.1.6 Render Queue
+  - 18.2 How the Event Loop Works
+  - 18.3 Macrotasks vs Microtasks
+  - 18.4 Event Loop Phases (Node.js)
+  - 18.5 Blocking the Event Loop
+  - 18.6 Visualizing the Event Loop
+- Chapter 19: Callbacks
+  - 19.1 Synchronous vs Asynchronous Callbacks
+  - 19.2 The Callback Pattern
+  - 19.3 Error-First Callbacks (Node.js style)
+  - 19.4 Callback Hell (Pyramid of Doom)
+  - 19.5 Inversion of Control
+  - 19.6 Limitations of Callbacks
+- Chapter 20: Promises
+  - 20.1 What is a Promise?
+  - 20.2 Promise States (pending, fulfilled, rejected)
+  - 20.3 Creating Promises (Promise constructor)
+  - 20.4 Promise Methods
+  - 20.4.1 then()
+  - 20.4.2 catch()
+  - 20.4.3 finally()
+  - 20.5 Promise Chaining
+  - 20.6 Error Propagation in Chains
+  - 20.7 Promise Static Methods
+  - 20.7.1 Promise.all()
+  - 20.7.2 Promise.allSettled()
+  - 20.7.3 Promise.race()
+  - 20.7.4 Promise.any()
+  - 20.7.5 Promise.resolve()
+  - 20.7.6 Promise.reject()
+  - 20.8 Promise Composition Patterns
+  - 20.9 Promisifying Callback-Based Functions
+  - 20.10 Implementing Promise from Scratch
+- Chapter 21: Async/Await
+  - 21.1 async Functions
+  - 21.2 await Expression
+  - 21.3 Error Handling with try/catch
+  - 21.4 Parallel Execution (Promise.all with await)
+  - 21.5 Sequential vs Concurrent Execution
+  - 21.6 Async/Await in Loops
+  - 21.7 Top-Level Await
+  - 21.8 Async/Await with Generators
+  - 21.9 Converting Promise Chains to Async/Await
+- Chapter 22: Advanced Async Patterns
+  - 22.1 Async Iterators and Generators
+  - 22.2 for await...of Loop
+  - 22.3 Async Generators
+  - 22.4 Cancellation Patterns (AbortController)
+  - 22.5 Timeouts and Race Conditions
+  - 22.6 Retry Patterns
+  - 22.7 Rate Limiting and Throttling Async Operations
+  - 22.8 Batching and Caching Async Operations
+  - 22.9 Observable Pattern (Introduction)
+  - 22.10 Async Queue Implementation
+- Chapter 23: Web Workers (Browser)
+  - 23.1 Why Web Workers?
+  - 23.2 Dedicated Workers
+  - 23.2.1 Creating a Worker
+  - 23.2.2 Communication (postMessage, onmessage)
+  - 23.2.3 Error Handling
+  - 23.2.4 Terminating Workers
+  - 23.3 Shared Workers
+  - 23.4 Service Workers (Overview)
+  - 23.5 Transferable Objects
+  - 23.6 Worker Limitations
+  - 23.7 Performance Considerations
+  - Part VI: Advanced JavaScript Concepts
+- Chapter 24: Metaprogramming with Proxies and Reflect
+  - 24.1 What is Metaprogramming?
+  - 24.2 Proxy Fundamentals
+  - 24.2.1 Creating Proxies (target, handler)
+  - 24.2.2 Revocable Proxies
+  - 24.3 Proxy Traps
+  - 24.3.1 get and set
+  - 24.3.2 has (in operator)
+  - 24.3.3 deleteProperty
+  - 24.3.4 apply (function calls)
+  - 24.3.5 construct (new operator)
+  - 24.3.6 getPrototypeOf and setPrototypeOf
+  - 24.3.7 defineProperty
+  - 24.3.8 getOwnPropertyDescriptor
+  - 24.3.9 ownKeys
+  - 24.3.10 isExtensible and preventExtensions
+  - 24.4 Practical Proxy Use Cases
+  - 24.4.1 Validation
+  - 24.4.2 Logging and Profiling
+  - 24.4.3 Observability (Change Detection)
+  - 24.4.4 Caching
+  - 24.4.5 Default Values
+  - 24.4.6 Virtual Properties
+  - 24.4.7 Revocable References
+  - 24.5 The Reflect API
+  - 24.5.1 Reflect Methods (matching traps)
+  - 24.5.2 Using Reflect in Proxies
+- Chapter 25: Symbols
+  - 25.1 Creating Symbols
+  - 25.2 Symbol Characteristics (unique, not enumerable)
+  - 25.3 Global Symbol Registry (Symbol.for, Symbol.keyFor)
+  - 25.4 Well-Known Symbols
+  - 25.4.1 Symbol.iterator
+  - 25.4.2 Symbol.asyncIterator
+  - 25.4.3 Symbol.hasInstance
+  - 25.4.4 Symbol.isConcatSpreadable
+  - 25.4.5 Symbol.match, Symbol.replace, Symbol.search, Symbol.split
+  - 25.4.6 Symbol.species
+  - 25.4.7 Symbol.toPrimitive
+  - 25.4.8 Symbol.toStringTag
+  - 25.4.9 Symbol.unscopables
+  - 25.5 Use Cases for Symbols
+  - 25.5.1 Private Properties (convention)
+  - 25.5.2 Avoiding Property Name Collisions
+  - 25.5.3 Defining Custom Behavior
+- Chapter 26: Memory Management
+  - 26.1 Memory Life Cycle
+  - 26.2 Garbage Collection
+  - 26.2.1 Reference Counting
+  - 26.2.2 Mark-and-Sweep
+  - 26.2.3 Generational Collection
+  - 26.2.4 Incremental Collection
+  - 26.3 Memory Leaks
+  - 26.3.1 Accidental Global Variables
+  - 26.3.2 Forgotten Timers and Callbacks
+  - 26.3.3 Closures Causing Leaks
+  - 26.3.4 Detached DOM Elements
+  - 26.3.5 Event Listeners
+  - 26.3.6 Circular References
+  - 26.4 Detecting Memory Leaks
+  - 26.4.1 Chrome DevTools Memory Tab
+  - 26.4.2 Heap Snapshots
+  - 26.4.3 Allocation Timeline
+  - 26.4.4 Performance Monitor
+  - 26.5 Weak References (WeakMap, WeakSet, WeakRef)
+  - 26.6 FinalizationRegistry
+- Chapter 27: Modules
+  - 27.1 The Need for Modules
+  - 27.2 Module Formats History
+  - 27.2.1 IIFE Modules
+  - 27.2.2 CommonJS (require, module.exports)
+  - 27.2.3 AMD (Asynchronous Module Definition)
+  - 27.2.4 UMD (Universal Module Definition)
+  - 27.3 ES6 Modules
+  - 27.3.1 Named Exports/Imports
+  - 27.3.2 Default Exports/Imports
+  - 27.3.3 Mixed Exports
+  - 27.3.4 Renaming Imports/Exports (as)
+  - 27.3.5 Namespace Imports (* as)
+  - 27.3.6 Re-exporting (export from)
+  - 27.4 Dynamic Imports (import())
+  - 27.5 Module Resolution
+  - 27.6 Circular Dependencies
+  - 27.7 Tree Shaking
+  - 27.8 Modules in Browsers vs Node.js
+  - 27.9 Module Bundlers (Conceptual Understanding)
+- Chapter 28: Regular Expressions
+  - 28.1 Creating Regular Expressions
+  - 28.2 RegExp Methods (test, exec)
+  - 28.3 String Methods with RegExp (match, matchAll, search, replace, split)
+  - 28.4 Pattern Syntax
+  - 28.4.1 Character Classes
+  - 28.4.2 Quantifiers
+  - 28.4.3 Groups and Ranges
+  - 28.4.4 Assertions (Lookahead, Lookbehind)
+  - 28.4.5 Flags (g, i, m, s, u, y)
+  - 28.5 Advanced RegExp Features
+  - 28.5.1 Named Capture Groups
+  - 28.5.2 Backreferences
+  - 28.5.3 Unicode Property Escapes
+  - 28.6 Performance Considerations
+  - 28.7 Common RegExp Patterns
+  - 28.8 Debugging Regular Expressions
+- Chapter 29: Debugging JavaScript
+  - 29.1 Console API Mastery
+  - 29.1.1 console.log, info, warn, error
+  - 29.1.2 console.table
+  - 29.1.3 console.group, groupCollapsed, groupEnd
+  - 29.1.4 console.time, timeLog, timeEnd
+  - 29.1.5 console.count, countReset
+  - 29.1.6 console.trace
+  - 29.1.7 console.dir, dirxml
+  - 29.1.8 console.assert
+  - 29.1.9 console.clear
+  - 29.2 Chrome DevTools
+  - 29.2.1 Sources Panel
+  - 29.2.1.1 Breakpoints (line, conditional, DOM, event listener)
+  - 29.2.1.2 Stepping Through Code
+  - 29.2.1.3 Watch Expressions
+  - 29.2.1.4 Call Stack
+  - 29.2.1.5 Scope Variables
+  - 29.2.1.6 Blackboxing Scripts
+  - 29.2.2 Debugging with debugger Statement
+  - 29.2.3 Debugging Async Code
+  - 29.2.4 Debugging Memory Issues (Heap Snapshots)
+  - 29.2.5 Performance Profiling
+  - 29.2.6 Network Panel for API Debugging
+  - 29.3 VS Code Debugger
+  - 29.3.1 Launch Configurations
+  - 29.3.2 Attaching to Node.js Processes
+  - 29.3.3 Debugging Tests
+  - 29.4 Node.js Debugging
+  - 29.4.1 Inspector
+  - 29.4.2 ndb
+- Chapter 30: Code Quality and Linting
+  - 30.1 ESLint
+  - 30.1.1 Installation and Configuration
+  - 30.1.2 Rules (errors, warnings, off)
+  - 30.1.3 Plugins
+  - 30.1.4 Extending Configs
+  - 30.1.5 .eslintrc Formats
+  - 30.1.6 Ignoring Files
+  - 30.1.7 Fixing Automatically
+  - 30.2 Prettier
+  - 30.2.1 Opinionated Formatting
+  - 30.2.2 Integration with ESLint
+  - 30.2.3 Configuration Options
+  - 30.3 EditorConfig
+  - 30.4 Husky and lint-staged (Git Hooks)
+  - 30.5 JSDoc Comments
+  - 30.5.1 @param, @returns, @throws
+  - 30.5.2 @typedef for Custom Types
+  - 30.5.3 Generating Documentation
+- Chapter 31: Testing JavaScript
+  - 31.1 Testing Fundamentals
+  - 31.1.1 Why Test?
+  - 31.1.2 Types of Tests (Unit, Integration, E2E)
+  - 31.1.3 Test Pyramid
+  - 31.2 Unit Testing with Jest
+  - 31.2.1 Setup and Configuration
+  - 31.2.2 Matchers (toBe, toEqual, toContain, toThrow)
+  - 31.2.3 Setup and Teardown (beforeEach, afterAll)
+  - 31.2.4 Mocking Functions (jest.fn(), jest.spyOn())
+  - 31.2.5 Mocking Modules (jest.mock())
+  - 31.2.6 Mocking Timers (jest.useFakeTimers())
+  - 31.2.7 Testing Async Code
+  - 31.2.8 Code Coverage
+  - 31.3 Alternative Test Runners (Mocha, Jasmine, Vitest)
+  - 31.4 Assertion Libraries (Chai, expect)
+  - 31.5 Test-Driven Development (TDD) with JavaScript
+  - 31.5.1 Red-Green-Refactor Cycle
+  - 31.5.2 Writing Tests First
+  - 31.5.3 Refactoring Safely
+  - 31.6 Property-Based Testing (fast-check)
+- Chapter 32: JavaScript Performance
+  - 32.1 Measuring Performance
+  - 32.1.1 Performance API (performance.now())
+  - 32.1.2 console.time
+  - 32.1.3 Chrome DevTools Performance Tab
+  - 32.1.4 Lighthouse Audits
+  - 32.2 JavaScript Engine Optimizations
+  - 32.2.1 Hidden Classes
+  - 32.2.2 Inline Caching
+  - 32.2.3 Just-In-Time (JIT) Compilation
+  - 32.2.4 Garbage Collection Impact
+  - 32.3 Code-Level Optimizations
+  - 32.3.1 Loop Optimizations
+  - 32.3.2 Function Inlining
+  - 32.3.3 Memoization
+  - 32.3.4 Debouncing and Throttling
+  - 32.3.5 Lazy Evaluation
+  - 32.3.6 Avoiding Memory Leaks
+  - 32.4 DOM Interaction Performance
+  - 32.4.1 Reflow and Repaint
+  - 32.4.2 Batch DOM Updates
+  - 32.4.3 Document Fragments
+  - 32.4.4 requestAnimationFrame
+  - 32.4.5 Virtual Scrolling
+  - 32.5 Network Performance
+  - 32.5.1 Minimizing Bundle Size
+  - 32.5.2 Code Splitting
+  - 32.5.3 Lazy Loading
+  - 32.5.4 Preloading, Prefetching, Preconnecting
+- Chapter 33: Design Patterns in JavaScript
+  - 33.1 Creational Patterns
+  - 33.1.1 Singleton
+  - 33.1.2 Factory Method
+  - 33.1.3 Abstract Factory
+  - 33.1.4 Builder
+  - 33.1.5 Prototype
+  - 33.2 Structural Patterns
+  - 33.2.1 Adapter
+  - 33.2.2 Decorator
+  - 33.2.3 Proxy
+  - 33.2.4 Facade
+  - 33.2.5 Bridge
+  - 33.2.6 Composite
+  - 33.2.7 Flyweight
+  - 33.3 Behavioral Patterns
+  - 33.3.1 Observer
+  - 33.3.2 Strategy
+  - 33.3.3 Command
+  - 33.3.4 Iterator (already covered)
+  - 33.3.5 Mediator
+  - 33.3.6 Memento
+  - 33.3.7 State
+  - 33.3.8 Template Method
+  - 33.3.9 Visitor
+  - 33.3.10 Chain of Responsibility
+  - 33.4 JavaScript-Specific Patterns
+  - 33.4.1 Module Pattern
+  - 33.4.2 Revealing Module Pattern
+  - 33.4.3 Singleton in ES6
+  - 33.4.4 Mixins
+  - 33.4.5 Middleware Pattern
+- Chapter 34: Document Object Model (DOM)
+  - 34.1 DOM Tree Structure
+  - 34.2 Selecting Elements
+  - 34.2.1 getElementById
+  - 34.2.2 getElementsByClassName
+  - 34.2.3 getElementsByTagName
+  - 34.2.4 querySelector and querySelectorAll
+  - 34.3 Traversing the DOM
+  - 34.3.1 Parent, Child, Sibling Relationships
+  - 34.3.2 closest(), matches()
+  - 34.4 Manipulating Elements
+  - 34.4.1 Creating Elements (createElement)
+  - 34.4.2 Inserting Elements (appendChild, insertBefore, append, prepend)
+  - 34.4.3 Removing Elements (removeChild, remove)
+  - 34.4.4 Cloning Elements (cloneNode)
+  - 34.4.5 innerHTML vs textContent
+  - 34.5 Attributes and Properties
+  - 34.5.1 getAttribute, setAttribute, removeAttribute
+  - 34.5.2 dataset (data-* attributes)
+  - 34.5.3 Class Manipulation (classList)
+  - 34.6 Styles and CSS
+  - 34.6.1 style Property
+  - 34.6.2 getComputedStyle
+  - 34.6.3 className and classList
+- Chapter 35: Events
+  - 35.1 Event Types
+  - 35.1.1 Mouse Events
+  - 35.1.2 Keyboard Events
+  - 35.1.3 Form Events
+  - 35.1.4 Focus Events
+  - 35.1.5 Touch Events
+  - 35.1.6 Drag and Drop Events
+  - 35.1.7 Custom Events
+  - 35.2 Event Handlers
+  - 35.2.1 Inline Event Handlers (onclick)
+  - 35.2.2 DOM Property Handlers
+  - 35.2.3 addEventListener
+  - 35.2.4 removeEventListener
+  - 35.3 Event Object
+  - 35.3.1 Properties (type, target, currentTarget)
+  - 35.3.2 Methods (preventDefault, stopPropagation, stopImmediatePropagation)
+  - 35.4 Event Propagation
+  - 35.4.1 Capturing Phase
+  - 35.4.2 Target Phase
+  - 35.4.3 Bubbling Phase
+  - 35.5 Event Delegation
+  - 35.6 Custom Events (CustomEvent)
+- Chapter 36: Browser Storage
+  - 36.1 Cookies
+  - 36.1.1 Setting and Reading Cookies
+  - 36.1.2 Cookie Attributes (expires, path, domain, secure, HttpOnly, SameSite)
+  - 36.2 Web Storage API
+  - 36.2.1 localStorage
+  - 36.2.2 sessionStorage
+  - 36.2.3 Storage Events
+  - 36.3 IndexedDB
+  - 36.3.1 Opening a Database
+  - 36.3.2 Object Stores
+  - 36.3.3 Transactions
+  - 36.3.4 CRUD Operations
+  - 36.3.5 Indexes
+  - 36.3.6 Cursors
+  - 36.4 Cache API (Service Workers)
+- Chapter 37: Network Requests
+  - 37.1 XMLHttpRequest (Legacy)
+  - 37.2 Fetch API
+  - 37.2.1 Basic Fetch
+  - 37.2.2 Request and Response Objects
+  - 37.2.3 Headers
+  - 37.2.4 Body Methods (json, text, blob, formData)
+  - 37.2.5 Error Handling
+  - 37.2.6 Aborting Fetch (AbortController)
+  - 37.3 WebSockets
+  - 37.3.1 WebSocket API
+  - 37.3.2 Sending and Receiving Messages
+  - 37.3.3 Connection Management
+  - 37.4 Server-Sent Events (EventSource)
+  - Part X: Advanced Topics
+- Chapter 38: Internationalization (i18n)
+  - 38.1 Intl Object Overview
+  - 38.2 Number Formatting (Intl.NumberFormat)
+  - 38.3 Date and Time Formatting (Intl.DateTimeFormat)
+  - 38.4 Collation (Intl.Collator)
+  - 38.5 Pluralization (Intl.PluralRules)
+  - 38.6 Relative Time (Intl.RelativeTimeFormat)
+  - 38.7 List Formatting (Intl.ListFormat)
+- Chapter 39: Security in JavaScript
+  - 39.1 Cross-Site Scripting (XSS)
+  - 39.1.1 Reflected XSS
+  - 39.1.2 Stored XSS 
+  - 39.1.3 DOM-based XSS
+  - 39.1.4 Prevention Strategies (escaping, CSP)
+  - 39.2 Cross-Site Request Forgery (CSRF)
+  - 39.3 Content Security Policy (CSP)
+  - 39.4 Same-Origin Policy and CORS
+  - 39.5 iframe Security (sandbox)
+  - 39.6 Subresource Integrity (SRI)
+  - 39.7 Secure Cookies (HttpOnly, Secure, SameSite)
+- Chapter 40: JavaScript Runtimes and Environments
+  - 40.1 Browser JavaScript
+  - 40.1.1 window Object
+  - 40.1.2 document Object
+  - 40.1.3 navigator Object
+  - 40.1.4 location Object
+  - 40.1.5 history Object
+  - 40.2 Node.js JavaScript
+  - 40.2.1 global Object
+  - 40.2.2 process Object
+  - 40.2.3 Buffer
+  - 40.2.4 __dirname, __filename
+  - 40.2.5 module and require
+  - 40.3 Deno and Bun (Alternative Runtimes)
+  - 40.4 WebAssembly and JavaScript
+
+</FileTree>
