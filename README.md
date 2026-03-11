@@ -1,49 +1,56 @@
-# Starlight Starter Kit: Basics
+# JavaScript: The Complete Guide
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
+Welcome to the **JavaScript: The Complete Guide** repository. This project is a comprehensive, chapter‑by‑chapter book about JavaScript, built as a modern documentation site using [Astro](https://astro.build) and [Starlight](https://starlight.astro.build). Every chapter is treated as a major feature release, and the content is versioned in [`CHANGELOG.md`](./CHANGELOG.md).
+
+## 🌐 Discovering the Book
+
+- **Read online**: The book is published at [https://your-book-url.com](https://your-book-url.com) (replace with your actual URL once deployed).
+- **Explore the content**: All chapters are written in Markdown and located in the `src/content/docs/` directory. You can browse them directly on GitHub.
+- **Changelog**: See [`CHANGELOG.md`](./CHANGELOG.md) for a versioned history of all chapters and updates.
+
+## 🏃 Running the Project Locally
+
+To run the documentation site locally and see the book in action:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- [pnpm](https://pnpm.io/) (or npm/yarn)
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/javascript-book.git
+   cd javascript-book
+   ```
+2. **Install dependencies**
+
+```bash
+pnpm install
+Start the development server
 ```
-pnpm create astro@latest -- --template starlight
-```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+3. **Start the development server**
 
-## 🚀 Project Structure
-
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+```bash
+pnpm start
 
 ```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+4. **Open your browser**
+   visit http://localhost:4321 to see the book.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+**Contributing**
+We welcome contributions of all kinds – from fixing typos to adding new examples, and especially translations!
 
-Static assets, like favicons, can be placed in the `public/` directory.
+How to contribute
+Fork the repository.
 
-## 🧞 Commands
+Create a new branch for your changes.
 
-All commands are run from the root of the project, from a terminal:
+Make your changes and commit them with clear messages.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+Push to your fork and open a pull request.
