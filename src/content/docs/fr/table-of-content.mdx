@@ -1,0 +1,655 @@
+---
+title: Sommaire
+description: Sommaire, Débuter en JavaScript
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import FileTree from "../../../components/FileTree.astro";
+import Center from "../../../components/Center.astro";
+
+<FileTree>
+- Chapitre 1 : Fondamentaux de JavaScript
+  - 1.1 Histoire et évolution de JavaScript
+  - 1.2 Configuration de votre environnement de développement
+  - 1.3 Votre premier programme JavaScript
+  - 1.4 JavaScript dans différents environnements
+  - 1.5 Comprendre la spécification ECMAScript
+- Chapitre 2 : Variables et types de données
+  - 2.1 Variables : var, let et const
+  - 2.2 Hoisting et zone morte temporaire
+  - 2.3 Types de données primitifs
+  - 2.3.1 Number (entiers, flottants, NaN, Infinity)
+  - 2.3.2 String (méthodes, littéraux de gabarit...)
+  - 2.3.3 Boolean
+  - 2.3.4 Undefined et Null
+  - 2.3.5 Symbol
+  - 2.3.6 BigInt
+  - 2.4 Types de données référence
+  - 2.4.1 Object
+  - 2.4.2 Array
+  - 2.4.3 Function
+  - 2.5 Coercition et conversion de types
+  - 2.6 Méthodes de vérification de type (typeof, instanceof, ...)
+- Chapitre 3 : Opérateurs et expressions
+  - 3.1 Opérateurs arithmétiques
+  - 3.2 Opérateurs d'affectation
+  - 3.3 Opérateurs de comparaison (== vs ===)
+  - 3.4 Opérateurs logiques (&&, ||, ??)
+  - 3.5 Opérateurs binaires
+  - 3.6 Opérateur ternaire
+  - 3.7 Opérateur virgule
+  - 3.8 Opérateurs typeof et instanceof
+  - 3.9 Chaînage optionnel (?.)
+  - 3.10 Coalescence nulle (??)
+  - 3.11 Précédence et associativité des opérateurs
+- Chapitre 4 : Contrôle de flux
+  - 4.1 Instructions conditionnelles
+  - 4.1.1 if, else if, else
+  - 4.1.2 Instruction switch
+  - 4.1.3 Opérateur conditionnel (ternaire)
+  - 4.2 Boucles
+  - 4.2.1 Boucle for
+  - 4.2.2 Boucle while
+  - 4.2.3 Boucle do...while
+  - 4.2.4 Boucle for...in
+  - 4.2.5 Boucle for...of
+  - 4.3 Contrôle de boucle (break, continue, instructions étiquetées)
+  - 4.4 Gestion d'erreurs avec try/catch/finally
+  - 4.5 Lever des erreurs personnalisées
+- Chapitre 5 : Fondamentaux des fonctions
+  - 5.1 Déclarations de fonction
+  - 5.2 Expressions de fonction
+  - 5.3 Fonctions fléchées
+  - 5.4 Expressions de fonction immédiatement invoquées (IIFE)
+  - 5.5 Fonctions génératrices
+  - 5.6 Fonctions asynchrones
+  - 5.7 Paramètres de fonction
+  - 5.7.1 Paramètres par défaut
+  - 5.7.2 Paramètres du reste
+  - 5.7.3 L'objet arguments
+  - 5.7.4 Destructuration des paramètres
+- Chapitre 6 : Le mot-clé 'this'
+  - 6.1 Qu'est-ce que 'this' ?
+  - 6.2 Contexte global
+  - 6.3 Contexte de fonction
+  - 6.4 Contexte de méthode
+  - 6.5 Contexte de constructeur
+  - 6.6 Contexte de gestionnaire d'événement
+  - 6.7 Fonctions fléchées et 'this'
+  - 6.8 Liaison explicite
+  - 6.8.1 call()
+  - 6.8.2 apply()
+  - 6.8.3 bind()
+  - 6.9 Règles de priorité de 'this'
+- Chapitre 7 : Closures
+  - 7.1 Comprendre la portée lexicale
+  - 7.2 Que sont les closures ?
+  - 7.3 Comment fonctionnent les closures
+  - 7.4 Modèles pratiques de closures
+  - 7.4.1 Variables privées
+  - 7.4.2 Fabriques de fonctions
+  - 7.4.3 Modèle module
+  - 7.4.4 Mémoïsation
+  - 7.4.5 Écouteurs d'événements et callbacks
+  - 7.5 Considérations de performance des closures
+  - 7.6 Pièges courants des closures
+- Chapitre 8 : Fonctions d'ordre supérieur
+  - 8.1 Les fonctions comme citoyens de première classe
+  - 8.2 Fonctions acceptant des fonctions (callbacks)
+  - 8.3 Fonctions retournant des fonctions
+  - 8.4 Composition de fonctions
+  - 8.5 Curryfication
+  - 8.5.1 Qu'est-ce que la curryfication ?
+  - 8.5.2 Implémenter la curryfication
+  - 8.5.3 Application partielle vs curryfication
+  - 8.6 Fonctions d'ordre supérieur pratiques
+  - 8.6.1 once()
+  - 8.6.2 debounce()
+  - 8.6.3 throttle()
+  - 8.6.4 memoize()
+  - 8.7 Fonctions d'ordre supérieur intégrées
+- Chapitre 9 : Récursivité
+  - 9.1 Comprendre la récursivité
+  - 9.2 Cas de base et cas récursif
+  - 9.3 La pile d'appels dans la récursivité
+  - 9.4 Optimisation des appels terminaux
+  - 9.5 Problèmes récursifs courants
+  - 9.5.1 Factorielle
+  - 9.5.2 Fibonacci
+  - 9.5.3 Parcours d'arbre
+  - 9.5.4 Clonage profond d'objet
+  - 9.6 Récursivité vs itération
+- Chapitre 10 : Plongée dans les objets
+  - 10.1 Littéraux d'objet
+  - 10.2 Accesseurs de propriété (point vs crochets)
+  - 10.3 Propriétés calculées
+  - 10.4 Définitions de méthode
+  - 10.5 Destructuration d'objet
+  - 10.6 Descripteurs de propriété
+  - 10.6.1 value
+  - 10.6.2 writable
+  - 10.6.3 enumerable
+  - 10.6.4 configurable
+  - 10.6.5 get et set
+  - 10.7 Méthodes d'objet
+  - 10.7.1 Object.create()
+  - 10.7.2 Object.assign()
+  - 10.7.3 Object.keys(), values(), entries()
+  - 10.7.4 Object.freeze(), seal(), preventExtensions()
+  - 10.7.5 Object.hasOwn()
+  - 10.7.6 Object.defineProperty()
+  - 10.8 Ordre d'énumération des propriétés
+- Chapitre 11 : Héritage prototypal
+  - 11.1 Comprendre les prototypes
+  - 11.2 La chaîne de prototypes
+  - 11.3 __proto__ vs prototype
+  - 11.4 Object.getPrototypeOf() et Object.setPrototypeOf()
+  - 11.5 L'opérateur instanceof
+  - 11.6 Propriété constructor
+  - 11.7 Créer des objets avec des prototypes personnalisés
+  - 11.8 Modèles d'héritage
+  - 11.8.1 Héritage par chaîne de prototypes
+  - 11.8.2 Vol de constructeur
+  - 11.8.3 Héritage combiné
+  - 11.8.4 Héritage parasitaire
+  - 11.8.5 Héritage combiné parasitaire
+- Chapitre 12 : Classes ES6
+  - 12.1 Déclarations et expressions de classe
+  - 12.2 La méthode constructor
+  - 12.3 Propriétés d'instance
+  - 12.4 Méthodes et propriétés statiques
+  - 12.5 Champs privés (#)
+  - 12.6 Accesseurs et mutateurs dans les classes
+  - 12.7 Héritage avec extends et super
+  - 12.8 Surcharge de méthode
+  - 12.9 Classes abstraites (simulation)
+  - 12.10 Mixins
+  - 12.11 Les classes sous le capot (sucre syntaxique)
+- Chapitre 13 : Objets natifs
+  - 13.1 L'objet global
+  - 13.2 Objet Number
+  - 13.3 Objet String
+  - 13.4 Objet Boolean
+  - 13.5 Objet Date
+  - 13.6 Objet Math
+  - 13.7 Objet RegExp
+  - 13.8 Objet Error et types d'erreur
+  - 13.9 Objet JSON (parse, stringify)
+- Chapitre 14 : Maîtrise des tableaux
+  - 14.1 Créer des tableaux
+  - 14.2 Propriétés des tableaux (length)
+  - 14.3 Catégories de méthodes de tableau
+  - 14.3.1 Méthodes mutatrices (push, pop, shift, unshift, splice, sort, reverse, fill, copyWithin)
+  - 14.3.2 Méthodes d'accès (concat, slice, join, indexOf, lastIndexOf, includes)
+  - 14.3.3 Méthodes d'itération (forEach, map, filter, reduce, reduceRight, some, every, find, findIndex, findLast, findLastIndex)
+  - 14.4 Tableaux multidimensionnels
+  - 14.5 Objets semblables à des tableaux
+  - 14.5.1 arguments
+  - 14.5.2 Collections HTML
+  - 14.5.3 Conversion en tableaux
+  - 14.6 Tableaux clairsemés
+  - 14.7 Considérations de performance
+- Chapitre 15 : Techniques avancées sur les tableaux
+  - 15.1 Plongée dans la méthode reduce()
+  - 15.2 Aplatissement de tableaux (flat, flatMap)
+  - 15.3 Tri d'objets personnalisés
+  - 15.4 Regroupement d'éléments de tableau
+  - 15.5 Intersection, union, différence de tableaux
+  - 15.6 Chaînage de méthodes de tableau
+  - 15.7 Opérations immuables sur les tableaux
+  - 15.8 Implémenter des méthodes de tableau personnalisées
+- Chapitre 16 : Itérateurs et générateurs
+  - 16.1 Le protocole d'itération
+  - 16.1.1 Protocole itérable (Symbol.iterator)
+  - 16.1.2 Protocole itérateur (next(), done, value)
+  - 16.2 Itérables natifs
+  - 16.3 Créer des itérables personnalisés
+  - 16.4 Fonctions génératrices
+  - 16.4.1 Mot-clé yield
+  - 16.4.2 Délégation yield*
+  - 16.4.3 Méthodes de générateur (next, return, throw)
+  - 16.4.4 Communication bidirectionnelle avec les générateurs
+  - 16.5 Cas d'usage pratiques des générateurs
+  - 16.5.1 Séquences infinies
+  - 16.5.2 Évaluation paresseuse
+  - 16.5.3 Contrôle de flux asynchrones
+- Chapitre 17 : Collections modernes
+  - 17.1 Map
+  - 17.1.1 Créer et utiliser des Maps
+  - 17.1.2 Map vs Object
+  - 17.1.3 Méthodes Map (set, get, has, delete, clear)
+  - 17.1.4 Itérer sur les Maps
+  - 17.2 Set
+  - 17.2.1 Créer et utiliser des Sets
+  - 17.2.2 Set vs Array
+  - 17.2.3 Méthodes Set (add, has, delete, clear)
+  - 17.2.4 Itérer sur les Sets
+  - 17.2.5 Opérations sur les Sets (union, intersection, différence)
+  - 17.3 WeakMap
+  - 17.3.1 Garbage collection et WeakMaps
+  - 17.3.2 Cas d'usage (données privées, mise en cache)
+  - 17.4 WeakSet
+  - 17.5 Tableaux typés (ArrayBuffer, DataView)
+- Chapitre 18 : La boucle d'événements
+  - 18.1 Architecture du runtime JavaScript
+  - 18.1.1 Pile d'appels
+  - 18.1.2 Tas
+  - 18.1.3 Web APIs / C++ APIs
+  - 18.1.4 File d'attente des callbacks (Task Queue)
+  - 18.1.5 File d'attente des microtasks
+  - 18.1.6 File d'attente de rendu
+  - 18.2 Comment fonctionne la boucle d'événements
+  - 18.3 Macrotâches vs microtâches
+  - 18.4 Phases de la boucle d'événements (Node.js)
+  - 18.5 Bloquer la boucle d'événements
+  - 18.6 Visualiser la boucle d'événements
+- Chapitre 19 : Callbacks
+  - 19.1 Callbacks synchrones vs asynchrones
+  - 19.2 Le modèle callback
+  - 19.3 Callbacks avec erreur en premier (style Node.js)
+  - 19.4 L'enfer des callbacks (Pyramide du doom)
+  - 19.5 Inversion de contrôle
+  - 19.6 Limitations des callbacks
+- Chapitre 20 : Promises
+  - 20.1 Qu'est-ce qu'une Promise ?
+  - 20.2 États d'une Promise (pending, fulfilled, rejected)
+  - 20.3 Créer des Promises (constructeur Promise)
+  - 20.4 Méthodes des Promises
+  - 20.4.1 then()
+  - 20.4.2 catch()
+  - 20.4.3 finally()
+  - 20.5 Chaînage de Promises
+  - 20.6 Propagation d'erreur dans les chaînes
+  - 20.7 Méthodes statiques des Promises
+  - 20.7.1 Promise.all()
+  - 20.7.2 Promise.allSettled()
+  - 20.7.3 Promise.race()
+  - 20.7.4 Promise.any()
+  - 20.7.5 Promise.resolve()
+  - 20.7.6 Promise.reject()
+  - 20.8 Modèles de composition de Promises
+  - 20.9 Promisifier des fonctions basées sur des callbacks
+  - 20.10 Implémenter une Promise from scratch
+- Chapitre 21 : Async/Await
+  - 21.1 Fonctions async
+  - 21.2 Expression await
+  - 21.3 Gestion d'erreurs avec try/catch
+  - 21.4 Exécution parallèle (Promise.all avec await)
+  - 21.5 Exécution séquentielle vs concurrente
+  - 21.6 Async/Await dans les boucles
+  - 21.7 Await au niveau racine
+  - 21.8 Async/Await avec les générateurs
+  - 21.9 Convertir des chaînes de Promises en Async/Await
+- Chapitre 22 : Modèles asynchrones avancés
+  - 22.1 Itérateurs et générateurs asynchrones
+  - 22.2 Boucle for await...of
+  - 22.3 Générateurs asynchrones
+  - 22.4 Modèles d'annulation (AbortController)
+  - 22.5 Délais et conditions de concurrence
+  - 22.6 Modèles de réessai
+  - 22.7 Limitation de débit et throttling d'opérations asynchrones
+  - 22.8 Regroupement et mise en cache d'opérations asynchrones
+  - 22.9 Modèle Observable (introduction)
+  - 22.10 Implémentation d'une file d'attente asynchrone
+- Chapitre 23 : Web Workers (navigateur)
+  - 23.1 Pourquoi les Web Workers ?
+  - 23.2 Workers dédiés
+  - 23.2.1 Créer un Worker
+  - 23.2.2 Communication (postMessage, onmessage)
+  - 23.2.3 Gestion d'erreurs
+  - 23.2.4 Terminer des Workers
+  - 23.3 Workers partagés
+  - 23.4 Service Workers (aperçu)
+  - 23.5 Objets transférables
+  - 23.6 Limitations des Workers
+  - 23.7 Considérations de performance
+- Chapitre 24 : Métaprogrammation avec Proxies et Reflect
+  - 24.1 Qu'est-ce que la métaprogrammation ?
+  - 24.2 Fondamentaux des Proxies
+  - 24.2.1 Créer des Proxies (cible, gestionnaire)
+  - 24.2.2 Proxies révocables
+  - 24.3 Intercepteurs (traps) de Proxy
+  - 24.3.1 get et set
+  - 24.3.2 has (opérateur in)
+  - 24.3.3 deleteProperty
+  - 24.3.4 apply (appels de fonction)
+  - 24.3.5 construct (opérateur new)
+  - 24.3.6 getPrototypeOf et setPrototypeOf
+  - 24.3.7 defineProperty
+  - 24.3.8 getOwnPropertyDescriptor
+  - 24.3.9 ownKeys
+  - 24.3.10 isExtensible et preventExtensions
+  - 24.4 Cas d'usage pratiques des Proxies
+  - 24.4.1 Validation
+  - 24.4.2 Journalisation et profilage
+  - 24.4.3 Observabilité (détection de changement)
+  - 24.4.4 Mise en cache
+  - 24.4.5 Valeurs par défaut
+  - 24.4.6 Propriétés virtuelles
+  - 24.4.7 Références révocables
+  - 24.5 L'API Reflect
+  - 24.5.1 Méthodes Reflect (correspondant aux intercepteurs)
+  - 24.5.2 Utiliser Reflect dans les Proxies
+- Chapitre 25 : Symbols
+  - 25.1 Créer des Symbols
+  - 25.2 Caractéristiques des Symbols (unicité, non énumérables)
+  - 25.3 Registre global des Symbols (Symbol.for, Symbol.keyFor)
+  - 25.4 Symbols bien connus
+  - 25.4.1 Symbol.iterator
+  - 25.4.2 Symbol.asyncIterator
+  - 25.4.3 Symbol.hasInstance
+  - 25.4.4 Symbol.isConcatSpreadable
+  - 25.4.5 Symbol.match, Symbol.replace, Symbol.search, Symbol.split
+  - 25.4.6 Symbol.species
+  - 25.4.7 Symbol.toPrimitive
+  - 25.4.8 Symbol.toStringTag
+  - 25.4.9 Symbol.unscopables
+  - 25.5 Cas d'usage des Symbols
+  - 25.5.1 Propriétés privées (convention)
+  - 25.5.2 Éviter les collisions de noms de propriétés
+  - 25.5.3 Définir un comportement personnalisé
+- Chapitre 26 : Gestion de la mémoire
+  - 26.1 Cycle de vie de la mémoire
+  - 26.2 Garbage collection
+  - 26.2.1 Comptage de références
+  - 26.2.2 Balayage marque-et-balaye
+  - 26.2.3 Collection générationnelle
+  - 26.2.4 Collection incrémentale
+  - 26.3 Fuites de mémoire
+  - 26.3.1 Variables globales accidentelles
+  - 26.3.2 Minuteurs et callbacks oubliés
+  - 26.3.3 Closures provoquant des fuites
+  - 26.3.4 Éléments DOM détachés
+  - 26.3.5 Écouteurs d'événements
+  - 26.3.6 Références circulaires
+  - 26.4 Détecter les fuites de mémoire
+  - 26.4.1 Onglet Mémoire des Chrome DevTools
+  - 26.4.2 Instantanés du tas
+  - 26.4.3 Chronologie des allocations
+  - 26.4.4 Moniteur de performance
+  - 26.5 Références faibles (WeakMap, WeakSet, WeakRef)
+  - 26.6 FinalizationRegistry
+- Chapitre 27 : Modules
+  - 27.1 Le besoin de modules
+  - 27.2 Histoire des formats de modules
+  - 27.2.1 Modules IIFE
+  - 27.2.2 CommonJS (require, module.exports)
+  - 27.2.3 AMD (Asynchronous Module Definition)
+  - 27.2.4 UMD (Universal Module Definition)
+  - 27.3 Modules ES6
+  - 27.3.1 Exportations/Importations nommées
+  - 27.3.2 Exportations/Importations par défaut
+  - 27.3.3 Exportations mixtes
+  - 27.3.4 Renommer les importations/exportations (as)
+  - 27.3.5 Importations d'espace de noms (* as)
+  - 27.3.6 Réexportation (export from)
+  - 27.4 Importations dynamiques (import())
+  - 27.5 Résolution de modules
+  - 27.6 Dépendances circulaires
+  - 27.7 Tree shaking
+  - 27.8 Modules dans les navigateurs vs Node.js
+  - 27.9 Bundlers de modules (compréhension conceptuelle)
+- Chapitre 28 : Expressions régulières
+  - 28.1 Créer des expressions régulières
+  - 28.2 Méthodes RegExp (test, exec)
+  - 28.3 Méthodes de String avec RegExp (match, matchAll, search, replace, split)
+  - 28.4 Syntaxe des motifs
+  - 28.4.1 Classes de caractères
+  - 28.4.2 Quantificateurs
+  - 28.4.3 Groupes et intervalles
+  - 28.4.4 Assertions (anticipation, rétrospective)
+  - 28.4.5 Drapeaux (g, i, m, s, u, y)
+  - 28.5 Fonctionnalités avancées des RegExp
+  - 28.5.1 Groupes de capture nommés
+  - 28.5.2 Rétroréférences
+  - 28.5.3 Échappements de propriétés Unicode
+  - 28.6 Considérations de performance
+  - 28.7 Motifs RegExp courants
+  - 28.8 Déboguer les expressions régulières
+- Chapitre 29 : Déboguer JavaScript
+  - 29.1 Maîtrise de la Console API
+  - 29.1.1 console.log, info, warn, error
+  - 29.1.2 console.table
+  - 29.1.3 console.group, groupCollapsed, groupEnd
+  - 29.1.4 console.time, timeLog, timeEnd
+  - 29.1.5 console.count, countReset
+  - 29.1.6 console.trace
+  - 29.1.7 console.dir, dirxml
+  - 29.1.8 console.assert
+  - 29.1.9 console.clear
+  - 29.2 Chrome DevTools
+  - 29.2.1 Panneau Sources
+  - 29.2.1.1 Points d'arrêt (ligne, conditionnel, DOM, écouteur d'événement)
+  - 29.2.1.2 Parcourir le code pas à pas
+  - 29.2.1.3 Expressions de surveillance
+  - 29.2.1.4 Pile d'appels
+  - 29.2.1.5 Variables de portée
+  - 29.2.1.6 Blackboxing de scripts
+  - 29.2.2 Débogage avec l'instruction debugger
+  - 29.2.3 Déboguer du code asynchrone
+  - 29.2.4 Déboguer les problèmes de mémoire (instantanés du tas)
+  - 29.2.5 Profilage de performance
+  - 29.2.6 Panneau Network pour le débogage d'API
+  - 29.3 Débogueur VS Code
+  - 29.3.1 Configurations de lancement
+  - 29.3.2 Attacher à des processus Node.js
+  - 29.3.3 Déboguer les tests
+  - 29.4 Débogage Node.js
+  - 29.4.1 Inspecteur
+  - 29.4.2 ndb
+- Chapitre 30 : Qualité de code et linting
+  - 30.1 ESLint
+  - 30.1.1 Installation et configuration
+  - 30.1.2 Règles (erreurs, avertissements, désactivé)
+  - 30.1.3 Plugins
+  - 30.1.4 Étendre des configurations
+  - 30.1.5 Formats .eslintrc
+  - 30.1.6 Ignorer des fichiers
+  - 30.1.7 Correction automatique
+  - 30.2 Prettier
+  - 30.2.1 Formatage opinionné
+  - 30.2.2 Intégration avec ESLint
+  - 30.2.3 Options de configuration
+  - 30.3 EditorConfig
+  - 30.4 Husky et lint-staged (hooks Git)
+  - 30.5 Commentaires JSDoc
+  - 30.5.1 @param, @returns, @throws
+  - 30.5.2 @typedef pour les types personnalisés
+  - 30.5.3 Générer de la documentation
+- Chapitre 31 : Tester JavaScript
+  - 31.1 Fondamentaux du test
+  - 31.1.1 Pourquoi tester ?
+  - 31.1.2 Types de tests (unitaire, intégration, E2E)
+  - 31.1.3 Pyramide des tests
+  - 31.2 Tests unitaires avec Jest
+  - 31.2.1 Installation et configuration
+  - 31.2.2 Comparateurs (toBe, toEqual, toContain, toThrow)
+  - 31.2.3 Initialisation et nettoyage (beforeEach, afterAll)
+  - 31.2.4 Mock de fonctions (jest.fn(), jest.spyOn())
+  - 31.2.5 Mock de modules (jest.mock())
+  - 31.2.6 Mock de minuteries (jest.useFakeTimers())
+  - 31.2.7 Tester du code asynchrone
+  - 31.2.8 Couverture de code
+  - 31.3 Autres exécuteurs de tests (Mocha, Jasmine, Vitest)
+  - 31.4 Bibliothèques d'assertion (Chai, expect)
+  - 31.5 Développement piloté par les tests (TDD) avec JavaScript
+  - 31.5.1 Cycle rouge-vert-refactor
+  - 31.5.2 Écrire les tests d'abord
+  - 31.5.3 Refactoriser en toute sécurité
+  - 31.6 Tests basés sur les propriétés (fast-check)
+- Chapitre 32 : Performance JavaScript
+  - 32.1 Mesurer la performance
+  - 32.1.1 Performance API (performance.now())
+  - 32.1.2 console.time
+  - 32.1.3 Onglet Performance des Chrome DevTools
+  - 32.1.4 Audits Lighthouse
+  - 32.2 Optimisations du moteur JavaScript
+  - 32.2.1 Classes cachées
+  - 32.2.2 Mise en cache en ligne
+  - 32.2.3 Compilation à la volée (JIT)
+  - 32.2.4 Impact du garbage collection
+  - 32.3 Optimisations au niveau du code
+  - 32.3.1 Optimisations de boucles
+  - 32.3.2 Inlining de fonctions
+  - 32.3.3 Mémoïsation
+  - 32.3.4 Debouncing et throttling
+  - 32.3.5 Évaluation paresseuse
+  - 32.3.6 Éviter les fuites de mémoire
+  - 32.4 Performance des interactions DOM
+  - 32.4.1 Reflux et repaint
+  - 32.4.2 Mises à jour DOM par lots
+  - 32.4.3 Fragments de document
+  - 32.4.4 requestAnimationFrame
+  - 32.4.5 Défilement virtuel
+  - 32.5 Performance réseau
+  - 32.5.1 Minimiser la taille du bundle
+  - 32.5.2 Fractionnement de code
+  - 32.5.3 Chargement paresseux
+  - 32.5.4 Préchargement, prélecture, préconnexion
+- Chapitre 33 : Design patterns en JavaScript
+  - 33.1 Patterns de création
+  - 33.1.1 Singleton
+  - 33.1.2 Méthode de fabrique
+  - 33.1.3 Fabrique abstraite
+  - 33.1.4 Monteur
+  - 33.1.5 Prototype
+  - 33.2 Patterns structurels
+  - 33.2.1 Adaptateur
+  - 33.2.2 Décorateur
+  - 33.2.3 Proxy
+  - 33.2.4 Façade
+  - 33.2.5 Pont
+  - 33.2.6 Composite
+  - 33.2.7 Poids-mouche
+  - 33.3 Patterns comportementaux
+  - 33.3.1 Observateur
+  - 33.3.2 Stratégie
+  - 33.3.3 Commande
+  - 33.3.4 Itérateur (déjà couvert)
+  - 33.3.5 Médiateur
+  - 33.3.6 Mémento
+  - 33.3.7 État
+  - 33.3.8 Méthode patron
+  - 33.3.9 Visiteur
+  - 33.3.10 Chaîne de responsabilité
+  - 33.4 Patterns spécifiques à JavaScript
+  - 33.4.1 Module Pattern
+  - 33.4.2 Revealing Module Pattern
+  - 33.4.3 Singleton en ES6
+  - 33.4.4 Mixins
+  - 33.4.5 Middleware Pattern
+- Chapitre 34 : Document Object Model (DOM)
+  - 34.1 Structure de l'arbre DOM
+  - 34.2 Sélectionner des éléments
+  - 34.2.1 getElementById
+  - 34.2.2 getElementsByClassName
+  - 34.2.3 getElementsByTagName
+  - 34.2.4 querySelector et querySelectorAll
+  - 34.3 Parcourir le DOM
+  - 34.3.1 Relations parent, enfant, frère
+  - 34.3.2 closest(), matches()
+  - 34.4 Manipuler des éléments
+  - 34.4.1 Créer des éléments (createElement)
+  - 34.4.2 Insérer des éléments (appendChild, insertBefore, append, prepend)
+  - 34.4.3 Supprimer des éléments (removeChild, remove)
+  - 34.4.4 Cloner des éléments (cloneNode)
+  - 34.4.5 innerHTML vs textContent
+  - 34.5 Attributs et propriétés
+  - 34.5.1 getAttribute, setAttribute, removeAttribute
+  - 34.5.2 dataset (attributs data-*)
+  - 34.5.3 Manipulation des classes (classList)
+  - 34.6 Styles et CSS
+  - 34.6.1 Propriété style
+  - 34.6.2 getComputedStyle
+  - 34.6.3 className et classList
+- Chapitre 35 : Événements
+  - 35.1 Types d'événements
+  - 35.1.1 Événements de souris
+  - 35.1.2 Événements de clavier
+  - 35.1.3 Événements de formulaire
+  - 35.1.4 Événements de focus
+  - 35.1.5 Événements tactiles
+  - 35.1.6 Événements de glisser-déposer
+  - 35.1.7 Événements personnalisés
+  - 35.2 Gestionnaires d'événements
+  - 35.2.1 Gestionnaires en ligne (onclick)
+  - 35.2.2 Gestionnaires par propriété DOM
+  - 35.2.3 addEventListener
+  - 35.2.4 removeEventListener
+  - 35.3 Objet événement
+  - 35.3.1 Propriétés (type, target, currentTarget)
+  - 35.3.2 Méthodes (preventDefault, stopPropagation, stopImmediatePropagation)
+  - 35.4 Propagation des événements
+  - 35.4.1 Phase de capture
+  - 35.4.2 Phase de cible
+  - 35.4.3 Phase de bouillonnement
+  - 35.5 Délégation d'événements
+  - 35.6 Événements personnalisés (CustomEvent)
+- Chapitre 36 : Stockage dans le navigateur
+  - 36.1 Cookies
+  - 36.1.1 Définir et lire des cookies
+  - 36.1.2 Attributs des cookies (expires, path, domain, secure, HttpOnly, SameSite)
+  - 36.2 Web Storage API
+  - 36.2.1 localStorage
+  - 36.2.2 sessionStorage
+  - 36.2.3 Événements de stockage
+  - 36.3 IndexedDB
+  - 36.3.1 Ouvrir une base de données
+  - 36.3.2 Magasins d'objets
+  - 36.3.3 Transactions
+  - 36.3.4 Opérations CRUD
+  - 36.3.5 Index
+  - 36.3.6 Curseurs
+  - 36.4 Cache API (Service Workers)
+- Chapitre 37 : Requêtes réseau
+  - 37.1 XMLHttpRequest (historique)
+  - 37.2 Fetch API
+  - 37.2.1 Fetch basique
+  - 37.2.2 Objets Request et Response
+  - 37.2.3 Headers
+  - 37.2.4 Méthodes du corps (json, text, blob, formData)
+  - 37.2.5 Gestion d'erreurs
+  - 37.2.6 Annuler une requête Fetch (AbortController)
+  - 37.3 WebSockets
+  - 37.3.1 API WebSocket
+  - 37.3.2 Envoyer et recevoir des messages
+  - 37.3.3 Gestion de connexion
+  - 37.4 Server-Sent Events (EventSource)
+- Chapitre 38 : Internationalisation (i18n)
+  - 38.1 Présentation de l'objet Intl
+  - 38.2 Formatage des nombres (Intl.NumberFormat)
+  - 38.3 Formatage des dates et heures (Intl.DateTimeFormat)
+  - 38.4 Collation (Intl.Collator)
+  - 38.5 Pluriels (Intl.PluralRules)
+  - 38.6 Temps relatifs (Intl.RelativeTimeFormat)
+  - 38.7 Formatage de listes (Intl.ListFormat)
+- Chapitre 39 : Sécurité en JavaScript
+  - 39.1 Cross-Site Scripting (XSS)
+  - 39.1.1 XSS réfléchi
+  - 39.1.2 XSS stocké
+  - 39.1.3 XSS basé sur le DOM
+  - 39.1.4 Stratégies de prévention (échappement, CSP)
+  - 39.2 Cross-Site Request Forgery (CSRF)
+  - 39.3 Content Security Policy (CSP)
+  - 39.4 Same-Origin Policy et CORS
+  - 39.5 Sécurité des iframes (sandbox)
+  - 39.6 Subresource Integrity (SRI)
+  - 39.7 Cookies sécurisés (HttpOnly, Secure, SameSite)
+- Chapitre 40 : Runtimes et environnements JavaScript
+  - 40.1 JavaScript dans le navigateur
+  - 40.1.1 Objet window
+  - 40.1.2 Objet document
+  - 40.1.3 Objet navigator
+  - 40.1.4 Objet location
+  - 40.1.5 Objet history
+  - 40.2 JavaScript Node.js
+  - 40.2.1 Objet global
+  - 40.2.2 Objet process
+  - 40.2.3 Buffer
+  - 40.2.4 **dirname, **filename
+  - 40.2.5 module et require
+  - 40.3 Deno et Bun (runtimes alternatifs)
+  - 40.4 WebAssembly et JavaScript
+
+</FileTree>
