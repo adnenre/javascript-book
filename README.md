@@ -6,7 +6,7 @@ Welcome to the **JavaScript: The Complete Guide** repository. This project is a 
 
 ## 🌐 Discovering the Book
 
-- **Read online**: The book is published at [https://your-book-url.com](https://your-book-url.com) (replace with your actual URL once deployed).
+- **Read online**: The book is published at [javascript-book](https://v0-javascript-book.vercel.app/) .
 - **Explore the content**: All chapters are written in Markdown and located in the `src/content/docs/` directory. You can browse them directly on GitHub.
 - **Changelog**: See [`CHANGELOG.md`](./CHANGELOG.md) for a versioned history of all chapters and updates.
 
@@ -46,11 +46,12 @@ pnpm start
 **Contributing**
 We welcome contributions of all kinds – from fixing typos to adding new examples, and especially translations!
 
-How to contribute
-Fork the repository.
+> How to contribute
 
-Create a new branch for your changes.
+- Fork the repository.
 
-Make your changes and commit them with clear messages.
+- Create a new branch for your changes.
 
-Push to your fork and open a pull request.
+- Make your changes and commit them with clear messages.
+
+- Push to your fork and open a pull request.
