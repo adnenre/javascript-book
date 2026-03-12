@@ -10,7 +10,7 @@ export default defineConfig({
     starlight({
       plugins: [starlightThemeGalaxy()],
       title: { en: "JavaScript Book", fr: "Javascript Livre" },
-      social: [{ icon: "github", label: "GitHub", href: "https://github.com/withastro/starlight" }],
+      social: [{ icon: "github", label: "GitHub", href: "https://github.com/adnenre/javascript-book/" }],
       defaultLocale: "en",
       locales: {
         // English docs in `src/content/docs/en/`
