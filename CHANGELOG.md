@@ -1,0 +1,201 @@
+# Changelog
+
+All notable changes to this JavaScript book are documented in this file. Each chapter represents a major feature release, adding comprehensive coverage of JavaScript concepts.
+
+---
+
+## [Version 1.0.0] - 2024-03-11
+
+### Added
+
+- **Chapter 1: JavaScript Foundations**
+  - 1.1 History and Evolution of JavaScript
+  - 1.2 Setting Up Your Development Environment
+  - 1.3 Your First JavaScript Program
+  - 1.4 JavaScript in Different Environments
+  - 1.5 Understanding the ECMAScript Specification
+- **Chapter 2: Variables and Data Types**
+  - 2.1 Variables: var, let, and const
+  - 2.2 Hoisting and Temporal Dead Zone
+  - 2.3 Primitive Data Types
+  - 2.3.1 Number (integers, floats, NaN, Infinity)
+  - 2.3.2 String (methods, template literals ...)
+  - 2.3.3 Boolean
+  - 2.3.4 Undefined and Null
+  - 2.3.5 Symbol
+  - 2.3.6 BigInt
+  - 2.4 Reference Data Types
+  - 2.4.1 Object
+  - 2.4.2 Array
+  - 2.4.3 Function
+  - 2.5 Type Coercion and Conversion
+  - 2.6 Type Checking Methods (typeof, instanceof,..)
+- **Chapter 3: Operators and Expressions**
+  - 3.1 Arithmetic Operators
+  - 3.2 Assignment Operators
+  - 3.3 Comparison Operators (== vs ===)
+  - 3.4 Logical Operators (&&, ||, ??)
+  - 3.5 Bitwise Operators
+  - 3.6 Ternary Operator
+  - 3.7 Comma Operator
+  - 3.8 typeof and instanceof Operators
+  - 3.9 Optional Chaining (?.)
+  - 3.10 Nullish Coalescing (??)
+  - 3.11 Operator Precedence and Associativity
+- **Chapter 4: Control Flow**
+  - 4.1 Conditional Statements
+  - 4.1.1 if, else if, else
+  - 4.1.2 switch statement
+  - 4.1.3 Conditional (ternary) operator
+  - 4.2 Loops
+  - 4.2.1 for loop
+  - 4.2.2 while loop
+  - 4.2.3 do...while loop
+  - 4.2.4 for...in loop
+  - 4.2.5 for...of loop
+  - 4.3 Loop Control
+  - 4.4 Error Handling with try/catch/finally
+  - 4.5 Throwing Custom Errors
+- **Chapter 5: Function Fundamentals**
+  - 5.1 Function Declarations
+  - 5.2 Function Expressions
+  - 5.3 Arrow Functions
+  - 5.4 Immediately Invoked Function Expressions (IIFE)
+  - 5.5 Generator Functions
+  - 5.6 Async Functions
+  - 5.7 Function Parameters
+  - 5.7.1 Default Parameters
+  - 5.7.2 Rest Parameters
+  - 5.7.3 The arguments Object
+  - 5.7.4 Parameter Destructuring
+- **Chapter 6: The 'this' Keyword**
+  - 6.1 What is 'this'?
+  - 6.2 Global Context
+  - 6.3 Function Context
+  - 6.4 Method Context
+  - 6.5 Constructor Context
+  - 6.6 Event Handler Context
+  - 6.7 Arrow Functions and 'this'
+  - 6.8 Explicit Binding
+  - 6.8.1 call()
+  - 6.8.2 apply()
+  - 6.8.3 bind()
+  - 6.9 'this' Priority Rules
+- **Chapter 7: Closures**
+  - 7.1 Understanding Lexical Scope
+  - 7.2 What are Closures?
+  - 7.3 How Closures Work
+  - 7.4 Practical Closure Patterns
+  - 7.4.1 Private Variables
+  - 7.4.2 Function Factories
+  - 7.4.3 Module Pattern
+  - 7.4.4 Memoization
+  - 7.4.5 Event Listeners and Callbacks
+  - 7.5 Closure Performance Considerations
+  - 7.6 Common Closure Pitfalls
+- **Chapter 8: Higher-Order Functions**
+  - 8.1 Functions as First-Class Citizens
+  - 8.2 Functions Accepting Functions (Callbacks)
+  - 8.3 Functions Returning Functions
+  - 8.4 Function Composition
+  - 8.5 Currying
+  - 8.5.1 What is Currying?
+  - 8.5.2 Implementing Currying
+  - 8.5.3 Partial Application vs Currying
+  - 8.6 Practical Higher-Order Functions
+  - 8.6.1 once()
+  - 8.6.2 debounce()
+  - 8.6.3 throttle()
+  - 8.6.4 memoize()
+  - 8.7 Built-in Higher-Order Functions
+- **Chapter 9: Recursion**
+  - 9.1 Understanding Recursion
+  - 9.2 Base Case and Recursive Case
+  - 9.3 The Call Stack in Recursion
+  - 9.4 Tail Call Optimization
+  - 9.5 Common Recursive Problems
+  - 9.5.1 Factorial
+  - 9.5.2 Fibonacci
+  - 9.5.3 Tree Traversal
+  - 9.5.4 Deep Object Cloning
+  - 9.6 Recursion vs Iteration
+- **Chapter 10: Objects Deep Dive**
+  - 10.1 Object Literals
+  - 10.2 Property Accessors (dot vs bracket)
+  - 10.3 Computed Properties
+  - 10.4 Method Definitions
+  - 10.5 Object Destructuring
+  - 10.6 Property Descriptors
+  - 10.6.1 value
+  - 10.6.2 writable
+  - 10.6.3 enumerable
+  - 10.6.4 configurable
+  - 10.6.5 get and set
+  - 10.7 Object Methods
+  - 10.7.1 Object.create()
+  - 10.7.2 Object.assign()
+  - 10.7.3 Object.keys(), values(), entries()
+  - 10.7.4 Object.freeze(), seal(), preventExtensions()
+  - 10.7.5 Object.hasOwn()
+  - 10.7.6 Object.defineProperty()
+  - 10.8 Property Enumeration Order
+- **Chapter 11: Prototypal Inheritance**
+  - 11.1 Understanding Prototypes
+  - 11.2 The Prototype Chain
+  - 11.3 **proto** vs prototype
+  - 11.4 Object.getPrototypeOf() and Object.setPrototypeOf()
+  - 11.5 The instanceof Operator
+  - 11.6 constructor Property
+  - 11.7 Creating Objects with Custom Prototypes
+  - 11.8 Inheritance Patterns
+  - 11.8.1 Prototype Chain Inheritance
+  - 11.8.2 Constructor Stealing
+  - 11.8.3 Combination Inheritance
+  - 11.8.4 Parasitic Inheritance
+  - 11.8.5 Parasitic Combination Inheritance
+- **Chapter 12: ES6 Classes**
+  - 12.1 Class Declarations and Expressions
+  - 12.2 The constructor Method
+  - 12.3 Instance Properties
+  - 12.4 Static Methods and Properties
+  - 12.5 Private Fields (#)
+  - 12.6 Getters and Setters in Classes
+  - 12.7 Inheritance with extends and super
+  - 12.8 Method Overriding
+  - 12.9 Abstract Classes (Simulation)
+  - 12.10 Mixins
+  - 12.11 Classes Under the Hood (Syntactic Sugar)
+- **Chapter 13: Built-in Objects**
+  - 13.1 The Global Object
+  - 13.2 Number Object
+  - 13.3 String Object
+  - 13.4 Boolean Object
+  - 13.5 Date Object
+  - 13.6 Math Object
+  - 13.7 RegExp Object
+  - 13.8 Error Object and Error Types
+  - 13.9 JSON Object (parse, stringify)
+  - Part IV: Arrays and Collections
+- **Chapter 14: Arrays Mastery**
+  - 14.1 Creating Arrays
+  - 14.2 Array Properties (length)
+  - 14.3 Array Methods Categories
+  - 14.3.1 Mutator Methods (push, pop, shift, unshift, splice, sort, reverse, fill, copyWithin)
+  - 14.3.2 Accessor Methods (concat, slice, join, indexOf, lastIndexOf, includes)
+  - 14.3.3 Iteration Methods (forEach, map, filter, reduce, reduceRight, some, every, find, findIndex, findLast, findLastIndex)
+  - 14.4 Multidimensional Arrays
+  - 14.5 Array-Like Objects
+  - 14.5.1 arguments
+  - 14.5.2 HTML Collections
+  - 14.5.3 Converting to Arrays
+  - 14.6 Sparse Arrays
+  - 14.7 Performance Considerations
+- **Chapter 15: Advanced Array Techniques**
+  - 15.1 The reduce() Method Deep Dive
+  - 15.2 Flattening Arrays (flat, flatMap)
+  - 15.3 Sorting Custom Objects
+  - 15.4 Grouping Array Elements
+  - 15.5 Array Intersection, Union, Difference
+  - 15.6 Chaining Array Methods
+  - 15.7 Immutable Array Operations
+  - 15.8 Implementing Custom Array Methods
