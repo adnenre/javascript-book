@@ -12,11 +12,11 @@ These methods are the modern, standard way to read and modify prototypes, prefer
 
 ### Code Example
 
---code javascript
+```javascript
 const parent = { name: "parent" };
 const child = {};
 
 Object.setPrototypeOf(child, parent);
 console.log(Object.getPrototypeOf(child) === parent); // true
 console.log(child.name); // "parent"
---code
+```
