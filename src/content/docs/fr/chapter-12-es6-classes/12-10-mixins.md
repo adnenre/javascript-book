@@ -15,39 +15,41 @@ Les mixins sont une façon de composer des classes en combinant des comportement
 
 ### Exemple de code
 
---code javascript
+```javascript
 // Fonctions mixin
-const CanFly = (superclass) => class extends superclass {
-fly() {
-console.log("Vole !");
-}
-};
+const CanFly = (superclass) =>
+  class extends superclass {
+    fly() {
+      console.log("Vole !");
+    }
+  };
 
-const CanSwim = (superclass) => class extends superclass {
-swim() {
-console.log("Nage !");
-}
-};
+const CanSwim = (superclass) =>
+  class extends superclass {
+    swim() {
+      console.log("Nage !");
+    }
+  };
 
 // Classe de base
 class Animal {
-constructor(name) {
-this.name = name;
-}
+  constructor(name) {
+    this.name = name;
+  }
 }
 
 // Création d’une classe avec plusieurs mixins
 class Duck extends CanSwim(CanFly(Animal)) {
-constructor(name) {
-super(name);
-}
-quack() {
-console.log(`${this.name} cancane.`);
-}
+  constructor(name) {
+    super(name);
+  }
+  quack() {
+    console.log(`${this.name} cancane.`);
+  }
 }
 
 const duck = new Duck("Donald");
 duck.fly(); // "Vole !"
 duck.swim(); // "Nage !"
 duck.quack(); // "Donald cancane."
---code
+```
